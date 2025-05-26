@@ -16,7 +16,7 @@ fs.readFile(link, 'utf-8', (erro, texto) => {
 //     "computador": 4
 // }
 // 
-// /[.,\/#!$%\^&\*;:{}=\-_`~()]/g
+// /[.,\/#!$%\^&\*;:{}=\-_`~()]/g 
 
 function quebraEmParagrafos(texto) {
     const paragrafos = texto.toLowerCase().split('\n');
