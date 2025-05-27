@@ -6,6 +6,9 @@ import { montaSaidaArquivo } from './helpers.js';
 import { Command } from 'commander';
 import chalk from 'chalk';
 
+// npm init -y
+// node src/cli.js -t ./arquivos/texto-web.txt -d ./resultados/
+
 const program = new Command();
 
 program
@@ -16,7 +19,7 @@ program
         const { texto, destino } = options;
 
         if (!texto || !destino ) {
-            console.error(chalk.red('erro: Favor inserir caminho de origem e destino'))
+            console.error(chalk.red('erro: Favor inserir caminho de origem e destino'));
             program.help();
             return;
         }
@@ -26,7 +29,7 @@ program
 
         try {
             processaArquivo(caminhoTexto, caminhoDestino);
-            console.log(chalk.green('Texto processado com sucesso'))
+            console.log(chalk.green('Texto processado com sucesso'));
         } catch (erro) {
             console.log('Ocorreu um erro no processamento', erro);
         }
