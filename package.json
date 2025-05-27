@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/Rowrias/nodejs-lib/issues"
   },
-  "homepage": "https://github.com/Rowrias/nodejs-lib#readme"
+  "homepage": "https://github.com/Rowrias/nodejs-lib#readme",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0"
+  }
 }
